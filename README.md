@@ -1,238 +1,189 @@
-# HR Analytics Dashboard — Power BI
+<div align="center">
 
-A professional, interactive **HR Analytics Dashboard built with Microsoft Power BI** for monitoring workforce structure, employee attrition, compensation, workforce trends, data changes, and HR alerts.
+<img src="HR_Dashboard_Complete_Assets/01_Logos/HR_Intelligence_Logo.png" alt="HR Intelligence logo" width="320">
 
-## 📊 Dashboard Overview
+# HR Intelligence: Workforce Analytics Dashboard
 
-The dashboard provides a centralized view of HR analytics through interactive KPI cards, charts, filters, detailed tables, and DAX-driven metrics.
+**A six-page, interactive Power BI report that turns 1,470 employee records into answers about attrition, pay, workforce makeup, data changes and HR risk.**
 
-### Main objectives
+![Power BI](https://img.shields.io/badge/Power%20BI-Desktop%20%26%20Service-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-55%2B%20measures-5B3A92?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/Power%20Query-ETL-7E57C2?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Excel%20%2F%20CSV-Data-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Made by](https://img.shields.io/badge/Built%20by-Muhammad%20Samaan-8A2BE2?style=for-the-badge)
 
-- Monitor total workforce and employee activity
-- Analyze employee attrition and retention
-- Understand workforce demographics
-- Analyze compensation and income patterns
-- Track employee changes
-- Identify HR-related alerts and exceptions
-- Explore relationships between employee attributes
-- Support HR reporting and data-driven decision-making
+### [▶ Open the live interactive dashboard](#-live-dashboard)
 
-## 🖥️ Dashboard Pages
+</div>
+
+---
+
+<img src="New%20folder/HR%20Analytics%201.JPG" alt="HR Intelligence overview page" width="100%">
+
+---
+
+## Why I built this
+
+Most HR reports I came across were either a wall of Excel tabs or a single pretty chart with no story behind it. I wanted something a non-technical HR manager could open and use in under a minute: click a department, see attrition change; flip to pay, see who is under- or over-paid; open the alert page, see exactly which employees need a conversation this week.
+
+So I built the whole thing from scratch: cleaned the data in Power Query, designed the model, wrote the DAX, drew the layout page by page, and wired up navigation, slicers and insight cards so every page talks to the others.
+
+This is a portfolio project and I put a lot of hours into it. If something here is useful to you, I'm happy.
+
+---
+
+## The dashboard at a glance
+
+| | |
+|---|---|
+| **Employees analysed** | 1,470 across 3 departments and 9 job roles |
+| **Employees who left** | 235, an attrition rate of **15.99%** |
+| **Total monthly payroll** | about 9.56M |
+| **Average / median monthly income** | 6,503 / 4,919 |
+| **Pages** | 6, each with its own filters and a navigation sidebar |
+| **DAX measures** | 55+ measures plus calculated columns for age group, tenure group, satisfaction label and alert category |
+| **Data model** | `Employees` fact table, `Dim Department`, `Dim Job Role`, and a change-log table |
+
+---
+
+## 🔗 Live Dashboard
+
+> **Power BI report:** `[Add your Power BI Service link here]`
+
+If the link asks you to sign in, the report is shared inside a Power BI workspace. The screenshots below show every page, including the filtered states, so you can see how it behaves without access.
+
+---
+
+## Page by page
 
 ### 1. Overview
+The landing page. Five KPI cards (total employees, leavers, monthly payroll, average job satisfaction, average income), a department slicer, and charts for headcount, satisfaction mix, attrition and income by role. The **HR Insights** box at the bottom rewrites itself as the filter changes.
 
-High-level summary of the organization, including:
-
-- Total Employees
-- Active Employees
-- Attrition metrics
-- Average Age
-- Average Tenure
-- Average Job Satisfaction
-- Department distribution
-- Workforce trends
-- Income and experience analysis
-- HR insights
-- Data status/refresh information
+<table>
+<tr>
+<td width="50%"><img src="New%20folder/HR%20Analytics%202.JPG" alt="Overview filtered to Human Resources"><br><sub>Filtered to Human Resources</sub></td>
+<td width="50%"><img src="New%20folder/HR%20Analytics%203.JPG" alt="Overview filtered to Research and Development"><br><sub>Filtered to Research & Development</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="New%20folder/HR%20Analytics%204.JPG" alt="Overview filtered to Sales"><br><sub>Filtered to Sales</sub></td>
+<td width="50%"></td>
+</tr>
+</table>
 
 ### 2. Attrition & Retention Analytics
+Who leaves, and when? KPIs for attrition count, attrition rate, active employees, average tenure and average age of leavers. Breakdowns by department, job role, age group, tenure group, overtime and job satisfaction. Extra slicers for job role, business travel, overtime and gender let you narrow down to very specific groups.
 
-Focuses on employee turnover and retention.
+<img src="New%20folder/HR%20Analytics%205.JPG" alt="Attrition and retention analytics" width="100%">
 
-Key KPIs:
+<table>
+<tr>
+<td width="50%"><img src="New%20folder/HR%20Analytics%206.JPG" alt="Attrition page with gender, travel and overtime filters"><br><sub>Male, Travel_Rarely, no overtime</sub></td>
+<td width="50%"><img src="New%20folder/HR%20Analytics%207.JPG" alt="Attrition page filtered to the Sales job role"><br><sub>Sales role, same filters</sub></td>
+</tr>
+</table>
 
-- Attrition
-- Attrition Rate
-- Active Employees
-- Average Tenure
-- Average Age
+### 3. Compensation & Pay Analytics
+Salary distribution, pay equity and pay patterns. Average, median and total payroll, highest paid role, pay range, income by role and department, years vs income, and a male/female pay comparison with the gap shown as a percentage. Five dropdown filters (job role, department, gender, job level, overtime) work together.
 
-Main analyses:
+<img src="New%20folder/HR%20Analytics%207_.JPG" alt="Compensation and pay analytics" width="100%">
 
-- Attrition by Department
-- Attrition by Job Role
-- Attrition by Age Group
-- Attrition by Tenure
-- Overtime vs Attrition
-- Job Satisfaction analysis
-
-### 3. Compensation Analytics
-
-Analyzes employee salary and income patterns.
-
-Key metrics include:
-
-- Median Monthly Income
-- Highest Paid Role
-- Pay Range
-- Average Tenure
-- Income vs. Experience
-- Compensation by Job Level
-- Gender Pay Comparison
+<table>
+<tr>
+<td width="50%"><img src="New%20folder/HR%20Analytics%208.JPG" alt="Compensation page filtered to Sales"><br><sub>Sales only</sub></td>
+<td width="50%"><img src="New%20folder/HR%20Analytics%209.JPG" alt="Compensation page with five filters applied"><br><sub>Sales, female, job level 5, overtime</sub></td>
+</tr>
+</table>
 
 ### 4. Workforce Analytics
+The shape of the organisation: headcount by department, gender split, age-group distribution, employees by job role, and a workforce structure donut. The **Key Insights** strip writes out the largest department, age group and job level, and the gender ratio in plain sentences.
 
-Provides demographic and organizational workforce analysis.
+<img src="New%20folder/HR%20Analytics%2010.JPG" alt="Workforce analytics" width="100%">
 
-Main areas include:
+<img src="New%20folder/HR%20Analytics%2011.JPG" alt="Workforce analytics with six filters applied" width="100%">
 
-- Department distribution
-- Age group distribution
-- Employee demographics
-- Workforce composition
-- Age-group analysis
-- Department-level workforce insights
+### 5. Data Changes & Updates
+A change-tracking page: total changes, new employees, removed employees, updated records and status changes, with a recent-changes table, a trend over time, a department split, and a "recent update by field" chart. A ChangeType filter drives the whole page.
 
-Age groups used in the dashboard include:
+> ⚠️ **The change history on this page is synthetic.** The Kaggle employee file is a single snapshot with no history, so I generated a dummy change log tied to real employee numbers and departments to build and test the page. The structure is real and refresh-ready; the events are not real HR events. More in [Data & Credits](#-data--credits).
 
-- Under 25
-- 25–34
-- 35–44
-- 45–54
-- 55 or Above
+<img src="New%20folder/HR%20Analytics%2012.JPG" alt="Data changes and updates, all change types" width="100%">
 
-### 5. Changes
+<table>
+<tr>
+<td width="50%"><img src="New%20folder/HR%20Analytics%2013.JPG" alt="Changes filtered to Update"><br><sub>Update</sub></td>
+<td width="50%"><img src="New%20folder/HR%20Analytics%2014.JPG" alt="Changes filtered to Status Change"><br><sub>Status Change</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="New%20folder/HR%20Analytics%2015.JPG" alt="Changes filtered to Remove"><br><sub>Remove</sub></td>
+<td width="50%"><img src="New%20folder/HR%20Analytics%2016.JPG" alt="Changes filtered to New"><br><sub>New</sub></td>
+</tr>
+</table>
 
-Provides visibility into changes recorded in the HR data.
+### 6. HR Alert Center
+Turns the data into a to-do list. Counters for high-priority, medium-priority, overtime and low-satisfaction alerts, a critical-alerts panel, alerts by department, and a full table of employees who need attention, filterable by department and alert type.
 
-Main components include:
+<img src="New%20folder/HR%20Analytics%2017.JPG" alt="HR alert center" width="100%">
 
-- Total Changes
-- Change activity
-- Change dates
-- Change details
-- Recent changes
-- Change log analysis
+<img src="New%20folder/HR%20Analytics%2018.JPG" alt="HR alert center filtered to Sales high priority" width="100%">
+<sub>Filtered to Sales and High Priority</sub>
 
-### 6. Alerts
+How the alert counters are built (checked against the data):
 
-Identifies employee records requiring attention based on configurable business rules.
+| Alert | Rule | Count |
+|---|---|---|
+| Low satisfaction | Job satisfaction of 1 or 2 | 569 |
+| Overtime | OverTime = Yes | 416 |
+| Medium priority | Low satisfaction **or** overtime | 832 |
+| Long tenure | More than 5 years at the company | 694 |
+| High salary | Monthly income of 10,000 or more | 281 |
 
-Example conditions include:
+Thresholds are easy to change in the DAX if your organisation draws the lines elsewhere.
 
-- Low Job Satisfaction
-- Overtime
-- Low Monthly Income
-- Salary-related conditions
-- Medium / High priority alerts
+---
 
-## 🎨 Design System
+## What the data says
 
-The dashboard uses a clean, professional light theme.
+A few things that stood out once the dashboard was done (all computed from the 1,470-row dataset):
 
-Design characteristics:
+- **Overtime is the loudest signal.** 30.0% of people who work overtime left, against 10.4% of those who don't.
+- **Count and rate tell different stories.** Research & Development loses the most people (132), but Sales (20.4%) and Human Resources (19.0%) lose a bigger share of their teams than R&D (13.7%).
+- **One role stands out.** Sales Representatives have a 39.8% attrition rate (33 of 83). Research Directors sit at 2.5%.
+- **Pay is skewed.** The median monthly income (4,919) sits well below the average (6,503) because a small group of Managers and Research Directors earn 16K to 17K on average.
+- **The workforce is young.** 25 to 34 is the largest age group with 554 people, about 37.7% of everyone.
+- **On average, women in this dataset earn slightly more than men** (6.69K vs 6.38K), which shows up as a −4.80% gender pay gap on the compensation page.
 
-- Rounded cards
-- Clean spacing
-- Consistent typography
-- Light backgrounds
-- Minimal visual clutter
-- Interactive filters
-- Professional KPI layouts
+---
 
-## 🛠️ Tools & Technologies
+## How it's built
 
-- **Microsoft Power BI Desktop**
-- **Power Query**
-- **DAX**
-- **Microsoft Excel / CSV**
-- **Power BI Service**
-- **GitHub**
-
-## 📁 Suggested Repository Structure
-
-```text
-HR-PowerBI-Dashboard/
-│
-├── README.md
-│
-├── PowerBI/
-│   └── HR_Analytics_Dashboard.pbix
-│
-├── Data/
-│   └── HR_Data.xlsx
-│
-├── Screenshots/
-│   ├── overview.png
-│   ├── attrition.png
-│   ├── compensation.png
-│   ├── workforce.png
-│   ├── changes.png
-│   └── alerts.png
-│
-├── Documentation/
-│   └── Dashboard_Documentation.pdf
-│
-└── LICENSE
 ```
-
-> **Privacy:** If the source data contains sensitive or personally identifiable employee information, do not publish the raw data publicly. Use anonymized or synthetic data instead.
-
-## 🔄 Data & Refresh Workflow
-
-The dashboard is designed so that the underlying data can be updated and the Power BI report refreshed.
-
-```text
-Data Source
-    ↓
-Excel / CSV / Shared Source
-    ↓
-Power Query
-    ↓
-Data Cleaning & Transformation
-    ↓
-Power BI Data Model
-    ↓
-DAX Measures
-    ↓
-Dashboard Visuals
-    ↓
+Kaggle CSV / Excel files
+        ↓
+Power Query: remove unused columns, fix data types, clean names, handle blanks
+        ↓
+Data model: Employees + Dim Department + Dim Job Role + ChangeLog table
+        ↓
+DAX: measures and calculated columns
+        ↓
+Six report pages with slicers, navigation, tooltips and insight cards
+        ↓
 Power BI Service
 ```
 
-For collaborative deployment, a shared **OneDrive or SharePoint** source can be used so authorized users can update the source data and Power BI can refresh the semantic model.
+**Calculated columns** I created: `Age Grouping`, `Tenure Group` (with a sort column), `Job Satisfaction Label` (Low / Medium / High / Very High) and `Alert Category`.
 
-## 🧹 Data Preparation
+**Age grouping**, as an example of the DAX style:
 
-Power Query is used to prepare the HR dataset before visualization.
-
-Typical preparation steps include:
-
-- Removing unnecessary columns
-- Removing duplicate records
-- Cleaning column names
-- Correcting data types
-- Handling missing values
-- Creating calculated categories
-- Preparing data for the Power BI model
-
-## 📐 DAX & Analytics
-
-The dashboard uses DAX measures and calculated columns for HR analysis.
-
-### Average Tenure
-
-```DAX
-Average Tenure =
-AVERAGE(Employees[YearsAtCompany])
-```
-
-### Age Grouping
-
-```DAX
+```dax
 Age Grouping =
 IF(
-    Employees[Age] < 25,
-    "Under 25",
+    Employees[Age] < 25, "Under 25",
     IF(
-        Employees[Age] < 35,
-        "25 - 34",
+        Employees[Age] < 35, "25 - 34",
         IF(
-            Employees[Age] < 45,
-            "35 - 44",
+            Employees[Age] < 45, "35 - 44",
             IF(
-                Employees[Age] < 55,
-                "45 - 54",
+                Employees[Age] < 55, "45 - 54",
                 "55 or Above"
             )
         )
@@ -240,159 +191,106 @@ IF(
 )
 ```
 
-### Example Alert Logic
+**Measures** are grouped by purpose:
 
-The alert system can use business rules such as:
+| Area | Examples |
+|---|---|
+| Headcount | `Total Employees`, `Active Employees`, `Total Department`, `Emp Count by Job Role` |
+| Attrition | `Attrition Employees`, `Attrition Rate`, `Attrition Rate by Department`, `Avg Age of Leavers`, `Overtime Employees` |
+| Compensation | `Average Monthly Income`, `Median Monthly Income`, `Total Monthly Payroll`, `Pay Range`, `Highest Paid Role`, `Male avg Income`, `Female Avg Income`, `Gender Pay Gap %` |
+| Changes | `Total Changes`, `New Employees`, `Removed Employee`, `Updated Records`, `Status Change %`, `Last Updated` |
+| Alerts | `High Priority Alert`, `Medium Priority Alerts`, `Overtime Alert`, `Low Satisfaction Alerts`, `High Salary Alert`, `Long Tenure Alerts` |
+| Dynamic text | `HR Insights`, `Largest Dept Insights`, `Largest Age Group Insight`, `Gender Ratio Insights`, `Busiest Change Date Insight` |
 
-- Job Satisfaction ≤ 2
-- Overtime = Yes
-- Monthly Income below a defined threshold
+---
 
-These are configurable examples and should be adjusted to the organization's HR policies.
+## 📁 Repository structure
 
-## 🔍 Interactivity
-
-The dashboard supports Power BI features such as:
-
-- Date filters
-- Department filters
-- Job Role filters
-- Employee-level filtering
-- Cross-filtering
-- Drill-down
-- Tooltips
-- Interactive charts
-- KPI cards
-
-## 🚀 Publishing & Deployment
-
-### Power BI
-
-Typical workflow:
-
-```text
-Power BI Desktop
-       ↓
-Publish
-       ↓
-Power BI Service
-       ↓
-Configure Refresh
-       ↓
-Share / Embed Report
+```
+HR/
+│
+├── README.md
+├── HR Analytics.pbix                          # The Power BI report (6 pages)
+│
+├── HR-Employee-Attrition.csv                  # Main employee dataset (1,470 rows x 35 columns)
+├── HR_ChangeLog_From_Employee_Data.xlsx       # Workbook: Employees_Current + baseline ChangeLog
+├── HR_ChangeLog_From_Employee_Data (1).xlsx   # Duplicate copy of the workbook above
+├── HR_ChangeLog_Dummy_Data_Matched.xlsx       # Synthetic change events used by the Changes page
+├── ChangeLog.xlsx                             # Small early test change log
+│
+├── New folder/                                # 19 dashboard output screenshots (used in this README)
+│   └── HR Analytics 1.JPG ... HR Analytics 18.JPG (plus 7_.JPG)
+├── ss img/                                    # 4 small alert-card icons
+│
+├── HR_Dashboard_Complete_Assets/              # Main design asset pack
+│   ├── 01_Logos/
+│   ├── 03_Navigation_Icons/
+│   ├── 04_KPI_Icons/
+│   ├── 05_Analytics_Icons/
+│   ├── 06_Change_Tracking_Icons/
+│   ├── 07_Alert_Icons/
+│   └── 08_UI_Icons/
+├── HR_Analytics_Page2_Complete_Assets/        # Attrition page: sidebar, KPI, analytics and insight cards
+├── Compensation_KPI_Purple_Icons/             # Compensation page KPI icons
+├── Changes_Page_Purple_Assets/Icons/          # Changes page icons
+└── HR_Alert_Center_Individual_Separate_Images/# Alert Center KPI and alert icons
 ```
 
-### GitHub
+---
 
-GitHub can host the project documentation, PBIX/project files where appropriate, screenshots, sample data, and supporting resources.
+## 📊 Data & Credits
 
-GitHub is the project repository; it does **not** replace Power BI Service as the interactive dashboard hosting platform.
+I want to be straightforward about where everything came from.
 
-Recommended setup:
+| What | Source | Notes |
+|---|---|---|
+| **Employee data** (1,470 rows, 35 columns) | [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) on Kaggle | A fictional dataset published for learning. Used as the base of the whole model. |
+| **Additional data** | Kaggle and a few other public sources | I used extra Excel files to widen the data and test the model with more variety. |
+| **Change log** | Generated by me | Synthetic events built from real employee numbers and departments in the dataset. Used to build and test the Changes page. They are **not** verified historical changes. |
+| **Icons, logos and backgrounds** | AI-generated image assets | Created for this project, organised into the asset folders above and imported into Power BI. |
 
-```text
-GitHub
-  ├── README
-  ├── PBIX / project files
-  ├── screenshots
-  ├── documentation
-  └── sample/anonymized data
+Every employee record is public or fictional, and names in the change log are placeholders like "Employee 1469". No real personal or confidential HR data is in this repository.
 
-Power BI Service
-  └── Published interactive dashboard
-```
+---
 
-## 🌐 Live Dashboard
+## ✋ Disclaimer
 
-**Power BI Dashboard:**  
-`[Add your Power BI report link here]`
+This project is **entirely my own work**. I designed the data model, wrote every DAX measure, built every page and interaction, and did the analysis myself, without a team, a mentor or anyone else's help. The only outside ingredients are the public datasets and AI-generated icon graphics credited above.
 
-**Live Demo / Website:**  
-`[Add your deployed website URL here]`
+The numbers and insights describe a fictional dataset. They do not describe any real company, and they should not be used for real HR decisions without your own data and policies.
 
-## 📸 Dashboard Preview
+---
 
-After adding screenshots to the `Screenshots` folder, use:
+## 🚀 Run it yourself
 
-```markdown
-## Dashboard Preview
+1. Download or clone this repository.
+2. Open `HR Analytics.pbix` in **Power BI Desktop** (Windows).
+3. If Power BI shows a data source error, go to **Transform data → Data source settings** and point each source to the matching file in your local copy.
+4. Click **Refresh**, then explore the pages.
 
-![Overview](Screenshots/overview.png)
+To publish: **Power BI Desktop → Publish → Power BI Service → configure refresh → share**.
 
-![Attrition Analytics](Screenshots/attrition.png)
+> A `.pbix` file on GitHub is a project file. It does not turn GitHub into a live dashboard host, which is why the interactive version lives in Power BI Service (see the link at the top).
 
-![Compensation Analytics](Screenshots/compensation.png)
+---
 
-![Workforce Analytics](Screenshots/workforce.png)
+## 🔮 What I'd add next
 
-![Changes](Screenshots/changes.png)
+- Automatic refresh from a shared OneDrive or SharePoint source
+- Row-level security so each manager sees only their own team
+- Drill-through page for individual employees
+- Attrition prediction and HR forecasting
+- Email alerts through Power Automate
 
-![Alerts](Screenshots/alerts.png)
-```
+---
 
-## 🔐 Data Privacy
+## 👨‍💻 About me
 
-For a public GitHub repository:
+**Muhammad Samaan**, Computer Science graduate from Iqra University, Karachi, working towards entry-level roles in Data Analytics / BI and Full-Stack development.
 
-- Remove employee names
-- Remove employee IDs
-- Remove email addresses
-- Remove phone numbers
-- Remove addresses
-- Remove confidential salary information where required
-- Remove other personally identifiable information
-- Use anonymized or synthetic data for demonstrations
+Power BI · Power Query · DAX · Excel · GitHub
 
-Do not publish confidential HR records or proprietary company information without authorization.
+[![GitHub](https://img.shields.io/badge/GitHub-MuhammadSamaan-181717?style=flat-square&logo=github)](https://github.com/MuhammadSamaan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-muhammad--samaan-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/muhammad-samaan)
 
-## 📌 Important Deployment Note
-
-A `.pbix` file stored on GitHub does not automatically become a publicly interactive Power BI dashboard.
-
-The normal architecture is:
-
-```text
-GitHub
-   ↓
-Project files / Documentation
-   ↓
-Power BI Service
-   ↓
-Interactive Report
-```
-
-Users who need to **view** the interactive report should receive the appropriate Power BI access or a properly configured public/embed link.
-
-Users who need to **update the data** should normally receive controlled access to the underlying shared data source rather than edit access to the GitHub repository.
-
-## 📈 Future Improvements
-
-Possible future enhancements:
-
-- Automated data refresh
-- OneDrive / SharePoint integration
-- Automated HR alerts
-- Email notifications
-- Row-level security
-- Role-based access
-- Employee drill-through pages
-- HR forecasting
-- Attrition prediction
-- Automated data-quality checks
-- Power BI Service deployment
-- Web embedding
-- Power Automate integration
-
-## 👨‍💻 Project Author
-
-**Muhammad Samaan**
-
-**Power BI • Power Query • DAX • Excel • GitHub**
-
-## 📄 License
-
-Choose a license appropriate for your intended use. For a portfolio project, an MIT License is one common option.
-
-## ⭐ Project
-
-This project demonstrates how Power BI can be used to transform HR data into an interactive analytics solution for workforce monitoring, attrition analysis, compensation analysis, change tracking, and HR alerts.
+If you like the project, a ⭐ on the repo means a lot, and I'm always happy to hear feedback.
