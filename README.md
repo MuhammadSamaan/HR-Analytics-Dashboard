@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="HR_Dashboard_Complete_Assets/01_Logos/HR_Intelligence_Logo.png" alt="HR Intelligence logo" width="320">
+<img src="HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%201.JPG" alt="HR Intelligence logo" width="320">
 
 # HR Intelligence: Workforce Analytics Dashboard
 
