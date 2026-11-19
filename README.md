@@ -18,7 +18,7 @@
 
 ---
 
-<img src="New%20folder/HR%20Analytics%201.JPG" alt="HR Intelligence overview page" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%201.JPG" alt="HR Intelligence overview page" width="100%">
 
 ---
 
