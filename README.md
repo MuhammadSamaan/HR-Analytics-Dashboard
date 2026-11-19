@@ -48,7 +48,7 @@ This is a portfolio project and I put a lot of hours into it. If something here 
 
 ## 🔗 Live Dashboard
 
-> **Power BI report:** `[Add your Power BI Service link here]`
+> **Power BI report:** `[Power BI Service link will be added]`
 
 If the link asks you to sign in, the report is shared inside a Power BI workspace. The screenshots below show every page, including the filtered states, so you can see how it behaves without access.
 
@@ -59,13 +59,15 @@ If the link asks you to sign in, the report is shared inside a Power BI workspac
 ### 1. Overview
 The landing page. Five KPI cards (total employees, leavers, monthly payroll, average job satisfaction, average income), a department slicer, and charts for headcount, satisfaction mix, attrition and income by role. The **HR Insights** box at the bottom rewrites itself as the filter changes.
 
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%201.JPG" alt="Overview filtered">
+
 <table>
 <tr>
-<td width="50%"><img src="New%20folder/HR%20Analytics%202.JPG" alt="Overview filtered to Human Resources"><br><sub>Filtered to Human Resources</sub></td>
-<td width="50%"><img src="New%20folder/HR%20Analytics%203.JPG" alt="Overview filtered to Research and Development"><br><sub>Filtered to Research & Development</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%202.JPG" alt="Overview filtered to Human Resources"><br><sub>Filtered to Human Resources</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%203.JPG" alt="Overview filtered to Research and Development"><br><sub>Filtered to Research & Development</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="New%20folder/HR%20Analytics%204.JPG" alt="Overview filtered to Sales"><br><sub>Filtered to Sales</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%204.JPG" alt="Overview filtered to Sales"><br><sub>Filtered to Sales</sub></td>
 <td width="50%"></td>
 </tr>
 </table>
@@ -73,58 +75,58 @@ The landing page. Five KPI cards (total employees, leavers, monthly payroll, ave
 ### 2. Attrition & Retention Analytics
 Who leaves, and when? KPIs for attrition count, attrition rate, active employees, average tenure and average age of leavers. Breakdowns by department, job role, age group, tenure group, overtime and job satisfaction. Extra slicers for job role, business travel, overtime and gender let you narrow down to very specific groups.
 
-<img src="New%20folder/HR%20Analytics%205.JPG" alt="Attrition and retention analytics" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%205.JPG" alt="Attrition and retention analytics" width="100%">
 
 <table>
 <tr>
-<td width="50%"><img src="New%20folder/HR%20Analytics%206.JPG" alt="Attrition page with gender, travel and overtime filters"><br><sub>Male, Travel_Rarely, no overtime</sub></td>
-<td width="50%"><img src="New%20folder/HR%20Analytics%207.JPG" alt="Attrition page filtered to the Sales job role"><br><sub>Sales role, same filters</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%206.JPG" alt="Attrition page with gender, travel and overtime filters"><br><sub>Male, Travel_Rarely, no overtime</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%207.JPG" alt="Attrition page filtered to the Sales job role"><br><sub>Sales role, same filters</sub></td>
 </tr>
 </table>
 
 ### 3. Compensation & Pay Analytics
 Salary distribution, pay equity and pay patterns. Average, median and total payroll, highest paid role, pay range, income by role and department, years vs income, and a male/female pay comparison with the gap shown as a percentage. Five dropdown filters (job role, department, gender, job level, overtime) work together.
 
-<img src="New%20folder/HR%20Analytics%207_.JPG" alt="Compensation and pay analytics" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%207_.JPG" alt="Compensation and pay analytics" width="100%">
 
 <table>
 <tr>
-<td width="50%"><img src="New%20folder/HR%20Analytics%208.JPG" alt="Compensation page filtered to Sales"><br><sub>Sales only</sub></td>
-<td width="50%"><img src="New%20folder/HR%20Analytics%209.JPG" alt="Compensation page with five filters applied"><br><sub>Sales, female, job level 5, overtime</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%208.JPG" alt="Compensation page filtered to Sales"><br><sub>Sales only</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%209.JPG" alt="Compensation page with five filters applied"><br><sub>Sales, female, job level 5, overtime</sub></td>
 </tr>
 </table>
 
 ### 4. Workforce Analytics
 The shape of the organisation: headcount by department, gender split, age-group distribution, employees by job role, and a workforce structure donut. The **Key Insights** strip writes out the largest department, age group and job level, and the gender ratio in plain sentences.
 
-<img src="New%20folder/HR%20Analytics%2010.JPG" alt="Workforce analytics" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2010.JPG" alt="Workforce analytics" width="100%">
 
-<img src="New%20folder/HR%20Analytics%2011.JPG" alt="Workforce analytics with six filters applied" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2011.JPG" alt="Workforce analytics with six filters applied" width="100%">
 
 ### 5. Data Changes & Updates
 A change-tracking page: total changes, new employees, removed employees, updated records and status changes, with a recent-changes table, a trend over time, a department split, and a "recent update by field" chart. A ChangeType filter drives the whole page.
 
 > ⚠️ **The change history on this page is synthetic.** The Kaggle employee file is a single snapshot with no history, so I generated a dummy change log tied to real employee numbers and departments to build and test the page. The structure is real and refresh-ready; the events are not real HR events. More in [Data & Credits](#-data--credits).
 
-<img src="New%20folder/HR%20Analytics%2012.JPG" alt="Data changes and updates, all change types" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2012.JPG" alt="Data changes and updates, all change types" width="100%">
 
 <table>
 <tr>
-<td width="50%"><img src="New%20folder/HR%20Analytics%2013.JPG" alt="Changes filtered to Update"><br><sub>Update</sub></td>
-<td width="50%"><img src="New%20folder/HR%20Analytics%2014.JPG" alt="Changes filtered to Status Change"><br><sub>Status Change</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2013.JPG" alt="Changes filtered to Update"><br><sub>Update</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2014.JPG" alt="Changes filtered to Status Change"><br><sub>Status Change</sub></td>
 </tr>
 <tr>
-<td width="50%"><img src="New%20folder/HR%20Analytics%2015.JPG" alt="Changes filtered to Remove"><br><sub>Remove</sub></td>
-<td width="50%"><img src="New%20folder/HR%20Analytics%2016.JPG" alt="Changes filtered to New"><br><sub>New</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2015.JPG" alt="Changes filtered to Remove"><br><sub>Remove</sub></td>
+<td width="50%"><img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2016.JPG" alt="Changes filtered to New"><br><sub>New</sub></td>
 </tr>
 </table>
 
 ### 6. HR Alert Center
 Turns the data into a to-do list. Counters for high-priority, medium-priority, overtime and low-satisfaction alerts, a critical-alerts panel, alerts by department, and a full table of employees who need attention, filterable by department and alert type.
 
-<img src="New%20folder/HR%20Analytics%2017.JPG" alt="HR alert center" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2017.JPG" alt="HR alert center" width="100%">
 
-<img src="New%20folder/HR%20Analytics%2018.JPG" alt="HR alert center filtered to Sales high priority" width="100%">
+<img src="https://github.com/MuhammadSamaan/HR-Analytics-Dashboard/blob/main/Output%20Images/HR%20Analytics%2018.JPG" alt="HR alert center filtered to Sales high priority" width="100%">
 <sub>Filtered to Sales and High Priority</sub>
 
 How the alert counters are built (checked against the data):
