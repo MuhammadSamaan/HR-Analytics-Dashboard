@@ -48,7 +48,7 @@ This is a portfolio project and I put a lot of hours into it. If something here 
 
 ## 🔗 Live Dashboard
 
-> **Power BI report:** `[Power BI Service link will be added]`
+> **Power BI report:** `(https://app.powerbi.com/groups/me/reports/66e3de47-ee9a-458f-aec2-c90e607aefb4/eb24b875aba9b7c98d02?experience=power-bi)`
 
 If the link asks you to sign in, the report is shared inside a Power BI workspace. The screenshots below show every page, including the filtered states, so you can see how it behaves without access.
 
